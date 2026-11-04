@@ -1,3 +1,4 @@
+
 ---
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
@@ -27,8 +28,7 @@ const automaticCanonical = Astro.site
   ? new URL(Astro.url.pathname, Astro.site).toString()
   : undefined;
 
-const canonicalUrl =
-  canonical || automaticCanonical;
+const canonicalUrl = canonical || automaticCanonical;
 
 const absoluteImage =
   image && Astro.site
@@ -46,8 +46,18 @@ const absoluteImage =
       content="width=device-width, initial-scale=1"
     />
 
-    <!-- Google AdSense Account Verification Meta Tag -->
-    <meta name="google-adsense-account" content="ca-pub-5966242101546820" />
+    <!-- Google AdSense Account Verification -->
+    <meta
+      name="google-adsense-account"
+      content="ca-pub-5966242101546820"
+    />
+
+    <!-- Google AdSense Script -->
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5966242101546820"
+      crossorigin="anonymous"
+    ></script>
 
     <title>{title}</title>
 
@@ -66,6 +76,7 @@ const absoluteImage =
       content={noindex ? "noindex, nofollow" : "index, follow"}
     />
 
+    <!-- Favicon -->
     <link
       rel="icon"
       type="image/svg+xml"
@@ -77,6 +88,7 @@ const absoluteImage =
       href="/favicon.ico"
     />
 
+    <!-- Canonical URL -->
     {
       canonicalUrl && (
         <link
@@ -86,6 +98,7 @@ const absoluteImage =
       )
     }
 
+    <!-- Open Graph -->
     <meta
       property="og:site_name"
       content="MyRigFoundry"
@@ -136,6 +149,7 @@ const absoluteImage =
       )
     }
 
+    <!-- Twitter Cards -->
     <meta
       name="twitter:card"
       content={
@@ -171,13 +185,7 @@ const absoluteImage =
       )
     }
 
-    <!-- Google AdSense Script -->
-    <script
-      async
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5966242101546820"
-      crossorigin="anonymous"
-    ></script>
-
+    <!-- Additional Head Content -->
     <slot name="head" />
   </head>
 
