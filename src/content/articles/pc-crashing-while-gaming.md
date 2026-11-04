@@ -4,7 +4,7 @@ description: "Is your PC restarting or turning off during gaming? Learn how to d
 pubDate: "2026-11-04"
 updated: "2026-11-04"
 author: "MyRigFoundry"
-image: "/images/articles/pc-crashing-gaming.jpg"
+image: "/images/articles/pc-crashing-while-gaming.jpeg"
 imageAlt: "A gamer troubleshooting an open gaming PC with internal hardware visible"
 category: "Performance"
 categoryName: "Performance"
