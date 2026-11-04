@@ -35,7 +35,7 @@ Overheating is the number one cause of sudden PC shutdowns during heavy loads. W
 2. **Improve Case Ventilation:** Ensure your intake and exhaust fan curves are properly configured in your BIOS or software.
 3. **Reapply Thermal Paste:** If your cooler has been mounted for more than 2 years, the factory thermal paste may have dried out, losing its heat-transfer efficiency.
 
-> **Recommended Fix:** A fresh application of high-performance thermal paste like the [ARCTIC MX-6 Thermal Compound](https://www.amazon.com/dp/B09VLPVT2Z?tag=myrigfoundry2-20) can instantly drop temperatures by up to 5°C–10°C under full load.
+> **Recommended Fix:** A fresh application of high-performance thermal paste like the [ARCTIC MX-6 Thermal Compound](https://www.amazon.com/s?k=ARCTIC+MX-6+Thermal+Compound&tag=myrigfoundry2-20) can instantly drop temperatures by up to 5°C–10°C under full load.
 
 ---
 
@@ -50,7 +50,7 @@ Modern high-end graphics cards experience microsecond-long power spikes that low
 * **Fix Cable Connections:** Ensure you are using separate PCIe power cables from your modular PSU rather than using a single "daisy-chained" cable with multiple connectors on one line.
 * **Upgrade Your PSU:** If your power supply is more than 4–5 years old, lacks an 80 Plus Gold certification, or comes from an unbranded manufacturer, replacing it is vital for stability.
 
-> **Recommended Upgrade:** For mid-to-high-end gaming rigs, a reliable, fully-modular unit like the [Corsair RM750x 80 Plus Gold Power Supply](https://www.amazon.com/dp/B08R5W47N2?tag=myrigfoundry2-20) provides ultra-stable voltage delivery and ample headroom for power spikes.
+> **Recommended Upgrade:** For mid-to-high-end gaming rigs, a reliable, fully-modular unit like the [Corsair RM750x Power Supply](https://www.amazon.com/s?k=Corsair+RM750x+Power+Supply&tag=myrigfoundry2-20) provides ultra-stable voltage delivery and ample headroom for power spikes.
 
 ---
 

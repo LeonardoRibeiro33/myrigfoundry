@@ -1373,3 +1373,13 @@ footer {
     padding: 22px;
   }
 }
+/* Torna os links dos artigos visíveis e destacados */
+article a {
+  color: #38bdf8; /* Azul claro */
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+article a:hover {
+  color: #7dd3fc;
+}
