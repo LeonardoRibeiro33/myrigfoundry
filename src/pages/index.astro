@@ -58,7 +58,7 @@ const sortedArticles = articles.sort((a, b) => {
   return new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime();
 });
 
-const latestFixes = sortedArticles.slice(0, 6).map((article) => {
+const latestFixes = sortedArticles.slice(0, 9).map((article) => {
   const rawCat = String(article.data.category || "").trim();
   const route =
     categoryRoutes[rawCat] ||
