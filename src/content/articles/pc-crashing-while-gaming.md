@@ -2,7 +2,13 @@
 title: "PC Crashing While Gaming? 5 Common Causes and Easy Fixes"
 description: "Is your PC restarting or turning off during gaming? Learn how to diagnose overheating, bad power supplies, faulty RAM, and GPU driver errors step-by-step."
 pubDate: "2026-11-04"
+updated: "2026-11-04"
 author: "MyRigFoundry"
+image: "/images/pc-crashing-gaming.jpg"
+imageAlt: "A gamer troubleshooting an open gaming PC with internal hardware visible"
+category: "Performance"
+categoryName: "Performance"
+categoryUrl: "/category/performance"
 tags: ["troubleshooting", "gaming-pc", "hardware"]
 ---
 
