@@ -35,21 +35,30 @@ const categories = [
   },
 ];
 
-const categoryRoutes = {
-  NETWORKING: "networking",
+const categoryRoutes: Record<string, string> = {
   PERFORMANCE: "performance",
+  NETWORKING: "networking",
   STORAGE: "storage",
   "RAM & BIOS": "ram-bios",
   "GPU & DISPLAY": "gpu-display",
+  performance: "performance",
+  networking: "networking",
+  storage: "storage",
+  "ram-bios": "ram-bios",
+  "gpu-display": "gpu-display",
+  Performance: "performance",
+  Networking: "networking",
+  Storage: "storage",
 };
 
 const articles = await getCollection("articles");
 
 const latestFixes = articles.slice(0, 6).map((article) => {
+  const rawCat = String(article.data.category || "").trim();
   const route =
-    categoryRoutes[
-      article.data.category as keyof typeof categoryRoutes
-    ];
+    categoryRoutes[rawCat] ||
+    categoryRoutes[rawCat.toUpperCase()] ||
+    rawCat.toLowerCase().replace(/[^a-z0-9]+/g, "-");
 
   return {
     category: article.data.category,
