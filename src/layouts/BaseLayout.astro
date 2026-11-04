@@ -11,6 +11,7 @@ interface Props {
   imageAlt?: string;
   type?: "website" | "article";
   noindex?: boolean;
+  adsenseId?: string;
 }
 
 const {
@@ -21,6 +22,7 @@ const {
   imageAlt = "MyRigFoundry PC troubleshooting and hardware guides",
   type = "website",
   noindex = false,
+  adsenseId = "ca-pub-5966242101546820",
 } = Astro.props;
 
 const automaticCanonical = Astro.site
@@ -167,6 +169,13 @@ const absoluteImage =
         </>
       )
     }
+
+    <!-- Google AdSense -->
+    <script
+      async
+      src={`https://pagead2.googlesyndication.com/pagead/js/adsense.js?client=${adsenseId}`}
+      crossorigin="anonymous"
+    ></script>
 
     <slot name="head" />
   </head>
