@@ -9,75 +9,87 @@ imageAlt: "A gamer troubleshooting an open gaming PC with internal hardware visi
 category: "performance"
 categoryName: "Performance"
 categoryUrl: "/category/performance"
-tags: ["troubleshooting", "gaming-pc", "hardware"]
+tags: ["troubleshooting", "gaming-pc", "hardware", "performance"]
 ---
 
 *Disclaimer: MyRigFoundry is reader-supported. When you buy through links on our site, we may earn an affiliate commission at no extra cost to you.*
 
 Nothing is more frustrating than having your PC crash right in the middle of an intense gaming session. Whether your game closes to the desktop, freezes completely, or causes a full System Reboot (BSOD), hardware and software conflicts are usually to blame.
 
-Here are the 5 most common reasons your PC crashes while gaming and how to fix them.
+Random crashes ruin your immersion, corrupt save files, and leave you guessing whether your graphics card, power supply, or RAM is giving up. 
+
+Here is a comprehensive, step-by-step troubleshooting guide covering the 5 most common reasons your PC crashes while gaming and how to fix them permanently.
 
 ---
 
 ## 1. High CPU or GPU Temperatures (Thermal Throttling)
 
-Overheating is the number one cause of sudden PC shutdowns during heavy loads. When your CPU or GPU reaches critical thermal limits (usually around 90°C–95°C), the system turns off automatically to prevent permanent hardware damage.
+Overheating is the number one cause of sudden PC shutdowns during heavy loads. When your CPU or GPU reaches critical thermal limits (usually around 90°C–95°C), the motherboard sends an emergency shutdown signal to prevent permanent silicon damage.
+
+### How to Diagnose:
+* **Check Real-time Stats:** Download software like **HWMonitor**, **MSI Afterburner**, or **HWiNFO64** and run a game in windowed mode or check peak temperatures right after a crash.
+* **Inspect Physical Airflow:** Check if your PC case has restricted airflow, clogged dust filters, or blocked radiator fans.
 
 ### How to Fix It:
-1. **Monitor Temperatures:** Download a free tool like HWMonitor or MSI Afterburner to check real-time temps while gaming.
-2. **Clean Dust Filters:** Dust buildup blocks airflow through your radiator and heatsinks. Use compressed air to clean out your case.
-3. **Reapply Thermal Paste:** If your cooler has been mounted for more than 2 years, the dry thermal paste may no longer transfer heat efficiently.
+1. **Clean Out Dust:** Use a can of compressed air to clear out dust buildup from heatsinks, radiator fins, and GPU fans.
+2. **Improve Case Ventilation:** Ensure your intake and exhaust fan curves are properly configured in your BIOS or software.
+3. **Reapply Thermal Paste:** If your cooler has been mounted for more than 2 years, the factory thermal paste may have dried out, losing its heat-transfer efficiency.
 
-> **Recommended Fix:** A fresh application of high-performance thermal paste like [ARCTIC MX-6 Thermal Compound](https://www.amazon.com/dp/B09VLPVT2Z?tag=myrigfoundry2-20) can instantly drop temperatures by up to 5°C–10°C.
+> **Recommended Fix:** A fresh application of high-performance thermal paste like the [ARCTIC MX-6 Thermal Compound](https://www.amazon.com/dp/B09VLPVT2Z?tag=myrigfoundry2-20) can instantly drop temperatures by up to 5°C–10°C under full load.
 
 ---
 
 ## 2. Unstable or Underpowered Power Supply Unit (PSU)
 
-If your screen instantly turns black and the PC restarts with no error message, your Power Supply (PSU) is likely triggering its Over Current Protection (OCP). Modern graphics cards suffer from brief power spikes that older or low-tier PSUs cannot handle.
+If your screen instantly goes black and the computer completely reboots (or refuses to turn back on for a few seconds) with no error message, your Power Supply Unit (PSU) is likely triggering its Over Current Protection (OCP) or Over Power Protection (OPP). 
+
+Modern high-end graphics cards experience microsecond-long power spikes that low-tier or aging power supplies cannot handle.
 
 ### How to Fix It:
-* Verify that your PSU wattage meets the recommended specs for your graphics card.
-* Ensure you are using separate PCIe power cables from the PSU rather than daisy-chaining a single cable.
-* If your PSU is old or rated below 80 Plus Bronze, upgrading to a reliable unit is mandatory for system stability.
+* **Check Wattage Requirements:** Verify that your PSU wattage meets or exceeds the minimum recommended specs for your GPU and CPU combination.
+* **Fix Cable Connections:** Ensure you are using separate PCIe power cables from your modular PSU rather than using a single "daisy-chained" cable with multiple connectors on one line.
+* **Upgrade Your PSU:** If your power supply is more than 4–5 years old, lacks an 80 Plus Gold certification, or comes from an unbranded manufacturer, replacing it is vital for stability.
 
-> **Recommended Upgrade:** For mid-to-high-end GPUs, a modular unit like the [Corsair RM750x 80 Plus Gold Power Supply](https://www.amazon.com/dp/B08R5W47N2?tag=myrigfoundry2-20) provides stable voltage and spike headroom.
+> **Recommended Upgrade:** For mid-to-high-end gaming rigs, a reliable, fully-modular unit like the [Corsair RM750x 80 Plus Gold Power Supply](https://www.amazon.com/dp/B08R5W47N2?tag=myrigfoundry2-20) provides ultra-stable voltage delivery and ample headroom for power spikes.
 
 ---
 
 ## 3. Corrupted Graphics Drivers
 
-Outdated or corrupted GPU drivers can cause games to crash directly to the desktop (CTD) or generate DirectX device hung errors.
+Outdated, buggy, or improperly installed GPU drivers are a major catalyst for games crashing directly to the desktop (CTD) or triggering DirectX device hung errors.
 
 ### How to Fix It:
-1. Perform a clean driver reinstallation using **Display Driver Uninstaller (DDU)** in Windows Safe Mode.
-2. Download and install the latest official driver directly from NVIDIA, AMD, or Intel.
-3. Disable background overlays (GeForce Experience, Discord, Steam Overlay) to rule out software conflicts.
+1. **Perform a Clean Driver Sweep:** Download **Display Driver Uninstaller (DDU)**. Boot your PC into Windows Safe Mode and use DDU to completely wipe all traces of existing NVIDIA, AMD, or Intel graphics drivers.
+2. **Install Fresh Drivers:** Restart normally and install the latest official WHQL-certified driver package directly from the manufacturer's website.
+3. **Disable Background Overlays:** Software overlays from Discord, GeForce Experience, Steam, or Xbox Game Bar can interfere with game rendering hooks. Disable them to test for stability.
 
 ---
 
 ## 4. Faulty or Unstable System RAM
 
-Bad RAM sticks cause random Blue Screen of Death (BSOD) errors with codes such as `MEMORY_MANAGEMENT` or `IRQL_NOT_LESS_OR_EQUAL`.
+Unstable memory profiles (XMP/EXOC) or failing memory sticks cause unpredictable Blue Screen of Death (BSOD) errors with codes such as `MEMORY_MANAGEMENT`, `IRQL_NOT_LESS_OR_EQUAL`, or `PAGED_FAULT_IN_NONPAGED_AREA`.
 
 ### How to Fix It:
-1. **Run Windows Memory Diagnostic:** Type `mdsched.exe` in the Windows search bar and restart your PC to scan for memory errors.
-2. **Disable XMP / DOCP:** If your RAM is overclocked via XMP in BIOS, toggle it off temporarily to check if instability disappears.
-3. **Test One Stick at a Time:** Remove all RAM sticks and test each channel individually to isolate a dead module.
+1. **Test Windows Memory Diagnostics:** Press the Windows Key, type `mdsched.exe`, select "Restart now and check for problems", and let Windows scan your memory sticks.
+2. **Disable XMP / DOCP in BIOS:** If your RAM is running at high overclocked profile speeds, disable XMP/EXOC temporarily in your BIOS to see if crashing stops. If it does, your RAM kit requires a slight voltage bump or lower frequency.
+3. **Reseat and Test Sticks:** Turn off your PC, remove all RAM sticks, clean the contact pins, and test them one by one in different motherboard slots to isolate a dead module.
 
 ---
 
-## 5. Corrupted Game or System Files
+## 5. Corrupted Game Files or Windows System Integrity
 
-Sometimes the issue isn't hardware at all, but missing or corrupted files within Windows or the game directory itself.
+Sometimes your hardware is completely healthy, but missing or corrupted files within Windows or the game directory are causing abrupt crashes.
 
 ### How to Fix It:
-* **Verify Game Files:** Right-click the game in Steam/Epic Games > Properties > Installed Files > *Verify integrity of game files*.
-* **Repair Windows Files:** Open Command Prompt as Administrator and run `sfc /scannow`.
+* **Verify Game Integrity:** If you are using Steam, right-click the game in your library, go to *Properties* > *Installed Files* > and click **Verify integrity of game files**. For Epic Games Launcher, select the manage option and click *Verify*.
+* **Repair Corrupted Windows System Files:** Open Command Prompt as Administrator (`cmd`), type `sfc /scannow`, and press Enter. Let Windows scan and automatically repair any damaged system components.
 
 ---
 
-## Summary Checklist
+## Final Summary Checklist
 
-If your PC crashes under load, start by checking your **temperatures** and **driver stability** first. If thermal levels are normal and drivers are clean, focus your diagnosis on **RAM stability** and **PSU power delivery**.
+If your PC keeps crashing during gaming, follow this order of elimination:
+1. Monitor your **temperatures** under load.
+2. Inspect your **power delivery** and PSU cabling.
+3. Clean-install your **GPU drivers** using DDU.
+4. Test your **RAM stability** by toggling XMP off or testing individual sticks.
