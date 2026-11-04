@@ -6,7 +6,7 @@ updated: "2026-11-04"
 author: "MyRigFoundry"
 image: "/images/pc-crashing-gaming.jpg"
 imageAlt: "A gamer troubleshooting an open gaming PC with internal hardware visible"
-category: "performance"
+category: "Performance"
 categoryName: "Performance"
 categoryUrl: "/category/performance"
 tags: ["troubleshooting", "gaming-pc", "hardware", "performance"]
