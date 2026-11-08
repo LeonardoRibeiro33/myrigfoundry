@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 google.com, pub-5966242101546820, DIRECT, f08c47fec0942fa0
+=======
+google.com, pub-5966242101546820, DIRECT, f08c47fec0942fa0
+>>>>>>> f71b31d (Add Google AdSense integration and ads.txt)
